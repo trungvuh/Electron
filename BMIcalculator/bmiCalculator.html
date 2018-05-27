@@ -1,0 +1,85 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <table border="6" align="center" bgcolor="#EEDDCC" class="bmiTable">
+            <tr><td>
+                <table border="0">
+            <tr>
+                <td width="20"></td>
+                <td width="50">Weight</td>
+                <td><input type="text" name="weight" size="4" id="weight"></td>
+                <td>
+                    <select id="weightCombo" name="weightCombo" size="1">
+                    <option selected>pounds</option>
+                    <option>kilograms</option>
+                    </select>
+                </td>
+                <td><em><font size="1">can&nbsp; convert<br>lbs to kgs</font></em></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Height</td>
+                <td colspan="2">
+                    <input type="text" name="height" size="4" id="height" onChange="changeToFeet()">
+                    <select id="inchCmSelector" name="inchCmSelector" size="1" onChange="changeToFeet()">
+                        <option selected>inches</option>
+                        <option>cm</option>
+                    </select>
+                    &nbsp;or <select name="heightInFeet" id ="heightInFeet" size="1" onChange="convertToInchesCMs()">
+                            <option value="1">1'</option>
+                            <option value="2">2'</option>
+                            <option value="3">3'</option>
+                            <option value="4">4' </option>
+                            <option value="5" selected>5' </option>
+                            <option value="6">6' </option>
+                            <option value="7">7' </option>
+                            </select><select name="heightInInches" id="heightInInches" size="1" onChange="convertToInchesCMs()">
+                            <option value="0">0'' </option>
+                            <option value="1">1'' </option>
+                            <option value="2">2'' </option>
+                            <option value="3">3'' </option>
+                            <option value="4">4'' </option>
+                            <option value="5">5'' </option>
+                            <option value="6" selected>6'' </option>
+                            <option value="7">7'' </option>
+                            <option value="8">8'' </option>
+                            <option value="9">9'' </option>
+                            <option value="10">10'' </option>
+                            <option value="11">11'' </option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0">
+                    <tr>
+                        <td width="150" align="center">
+                            <input name="button" id="calculate" onclick="calculateBMI()" type="button" value="Calculate BMI" style="margin-top:6px;">&nbsp;results:
+                        </td>
+                        <td>
+                            <table border="1" cellpadding="4">
+                                <tr>
+                                    <td align="right"><b>Body Mass Index</b>&nbsp;</td>
+                                    <td><input maxlength="5" name="bmiValue" id="bmiValue" size="5" type="text">kg/m<sup><small>2</small></sup></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table border="6" align="center" bgcolor="#EEDDCC" cellpadding="10" cellspacing="2">
+                    <tr>
+                    <td align="center">&nbsp;<br>
+                    <table border="1" align="center" cellpadding="8">
+                    <tr><td align="center">
+                    <p>Body Description: <input id="bmiStat" name="bmiStat" size="45" type="text"></p>
+                    <p align="right"><font color="#FF0000">
+                    </select></p>
+                    </td>
+                    </tr>
+                </table>
+        <script src="bmiCalculator.js"></script>
+    </body>
+</html>

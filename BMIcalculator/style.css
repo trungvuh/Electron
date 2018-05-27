@@ -1,0 +1,21 @@
+table.bmiTable {
+    border-width: 5px;
+    border-spacing: 5px;
+    border-style: outset;
+    border-color: blue;
+    border-collapse: separate;
+  background-color: #F3FAFC;
+  border-color: #6A7A95 #0978E8 #0978E8 #6A7A95
+}
+th.bmiTable {
+    border-width: 1px;
+    padding: 5px;
+    border-style: none;
+    -moz-border-radius: ;
+}
+td.bmiTable {
+    border-width: 1px;
+    padding: 5px;
+    border-style: none;
+    -moz-border-radius: ;
+}
